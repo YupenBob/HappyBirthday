@@ -1,0 +1,191 @@
+:root {
+  --hight: 60%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	overflow:hidden;
+}
+.container{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+
+}
+
+.fireworks{
+	position: absolute;
+	bottom: var(--hight);
+	transform: scale(0);
+	animation: fireworks 5s 2s;
+}
+
+@keyframes fireworks {
+	0%{
+		transform: scale(0);
+	}
+	80%{
+		transform: scale(1);
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.firecracker{
+	position: absolute;
+	bottom: 0%;
+	margin-left: -3px;
+	animation: firecracker 3s forwards;
+	
+}
+
+@keyframes firecracker {
+	0%{
+		transform: scale(1);
+		bottom: -10%;
+	}
+	100%{
+		bottom: var(--hight);
+		transform: scale(0.4);
+		opacity: 0;
+	}
+}
+
+.gift{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,0%);
+	transition: 0.5s;
+	transition-timing-function: ease-out;
+	user-select: none;
+	    -moz-user-select: none;
+	    -webkit-user-select: none;
+	    -ms-user-select: none;
+}
+
+
+#gift-box{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 20%;
+	transform: translate(-50%,-50%);
+	transition: 0.5s;
+	transition-timing-function: ease-out;
+	user-select: none;
+	    -moz-user-select: none;
+	    -webkit-user-select: none;
+	    -ms-user-select: none;
+}
+
+
+.gaizi-open{
+	animation: open 1.5s forwards;
+}
+
+@keyframes open {
+	0%{
+		bottom: 0px;
+	}
+	100%{
+		bottom: 40px;
+	}
+}
+
+.gift-close{
+	animation: gift-close 1.5s 2s forwards;
+}
+	
+@keyframes gift-close {
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+.gift-a{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.main{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	opacity: 0;
+	transform: translate(-50%,-50%);
+	animation: startcake 2s 5s forwards;
+	z-index: 100;
+}
+
+.cake{
+	position: relative;
+	left: 50%;
+	width: 40%;
+	transform: translate(-50%,5%);
+	animation:h1 3s infinite;
+}
+
+h1{
+	position: relative;
+	text-align:center;
+	letter-spacing: 6px;
+	font-size: 36px;
+	left: 8%;
+	color: white;
+	animation:h1 3s infinite;
+}
+
+hr{
+	height: 2px;
+	background: white;
+	border-radius: 5px;
+	margin: 7px;
+	animation:h1 3s infinite;
+}
+
+@keyframes h1 {
+	0%{
+		opacity: 1;
+	}
+	
+	50%{
+		opacity: 0.7;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+
+p{
+	position: relative;
+	top: 10px;
+	text-align:center;
+	color: white;
+	animation:h1 3s infinite;
+}
+
+@keyframes startcake {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
