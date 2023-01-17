@@ -70,7 +70,7 @@ function again() {
 //放烟花
 const startfire = async () => {
 	var box = document.getElementById("main");
-	box.innerHTML='<div class="container"><div class="fireworks" id="test" style="left: 50%; margin-left: -330px; margin-bottom: -242px;"><img src="./img/fireworks1.png" width="660px"></div><div class="firecracker" style="left: 50%; margin-left: -3.5px;"><img src="./img/firecracker.png" width="7px"></div></div><div class="main"><img src="img/cake.svg" class="cake" /><hr/><h1>祝你生日快乐！</h1><hr/><p>Happy Brithday！许个愿吧！<br/>祝你愿望成真！</p></div>';
+	box.innerHTML='<div class="container"><div class="fireworks" id="test" style="left: 50%; margin-left: -330px; margin-bottom: -242px;"><img src="./img/fireworks1.png" width="660px"></div><div class="firecracker" style="left: 50%; margin-left: -3.5px;"><img src="./img/firecracker.png" width="7px"></div></div><div class="main"><img src="img/cake.svg" class="cake" /><hr><h1>祝你生日快乐！</h1><hr><p>Happy Brithday！许个愿吧！<br/>祝你愿望成真！</p></div>';
 	
 	await sleep(1500);
 	

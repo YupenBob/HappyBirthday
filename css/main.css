@@ -127,6 +127,7 @@ body{
 	position: fixed;
 	left: 50%;
 	top: 50%;
+	width: 50%;
 	opacity: 0;
 	transform: translate(-50%,-50%);
 	animation: startcake 2s 5s forwards;
@@ -136,7 +137,7 @@ body{
 .cake{
 	position: relative;
 	left: 50%;
-	width: 40%;
+	width: 9.375rem;
 	transform: translate(-50%,5%);
 	animation:h1 3s infinite;
 }
@@ -144,19 +145,21 @@ body{
 h1{
 	position: relative;
 	text-align:center;
-	letter-spacing: 6px;
-	font-size: 36px;
-	left: 8%;
+	letter-spacing: 0.4rem;
+	font-size: 3.3rem;
+	left: 2.0625rem;
 	color: white;
 	animation:h1 3s infinite;
 }
 
 hr{
-	height: 2px;
+	height: 0.15rem;
 	background: white;
 	border-radius: 5px;
-	margin: 7px;
+	margin: 0.5625rem auto;
 	animation:h1 3s infinite;
+	width: 25rem;
+
 }
 
 @keyframes h1 {
@@ -178,6 +181,7 @@ p{
 	top: 10px;
 	text-align:center;
 	color: white;
+	font-size: 1.25rem;
 	animation:h1 3s infinite;
 }
 
